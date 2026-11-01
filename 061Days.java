@@ -1,6 +1,7 @@
+
 import java.util.Scanner;
 
-public class Day61 {
+public class Day61{
     public static void main(String[] args) {
         Scanner hi = new Scanner(System.in);
 
@@ -12,10 +13,10 @@ public class Day61 {
 
         while (i <= n) {
             jumlah *= i;
+            System.out.print(i+"X");
             i++;
         }
-
-        System.out.printf("Mengalikan angka 1 sampai %d = %d", n, jumlah);
-
+        System.out.print("\b = "+jumlah);
+        System.out.printf("\nMengalikan angka 1 sampai %d = %d",n,jumlah);
     }
 }
